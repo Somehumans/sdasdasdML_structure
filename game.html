@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPACENOUGHT</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
+    <div id="game-container">
+      <div id="score-display">SCORE: 0</div>
+      <div id="lives-display">LIVES: 3</div>
+      <div id="level-display">LEVEL: 1</div>
+      <div id="special-word-container">
+        <div id="special-word-display"></div>
+        <div id="special-word-hint">Complete this word for an extra life!</div>
+      </div>
+      <div class="ship" id="player-ship">
+        <div class="flames-container">
+          <object data="flames.svg" type="image/svg+xml" class="flame"></object>
+        </div>
+        <object
+          data="spaceship.svg"
+          type="image/svg+xml"
+          class="spaceship"
+        ></object>
+      </div>
+
+      <div id="start-screen">
+        <h1>SPACENOUGHT</h1>
+        <div class="guide-container">
+          <div class="guide-box">
+            <img
+              src="images/Guide 1.png"
+              alt="Type letters guide"
+              class="guide-image"
+            />
+            <p>Type letters to score points!</p>
+          </div>
+          <div class="guide-box">
+            <img
+              src="images/Guide 2.png"
+              alt="Bonus words guide"
+              class="guide-image"
+            />
+            <p>Spell out the bonus words for an extra life!</p>
+          </div>
+          <div class="guide-box">
+            <img
+              src="images/Guide 3.png"
+              alt="Power ups guide"
+              class="guide-image"
+            />
+            <p>Try to use the power ups and see how high you can get!</p>
+          </div>
+        </div>
+        <button id="start-button">START GAME</button>
+      </div>
+
+      <div id="game-over">
+        <h1>GAME OVER</h1>
+        <p id="final-score">YOUR SCORE: 0</p>
+        <button id="restart-button">PLAY AGAIN</button>
+        <button id="end-game">NOT NOW</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

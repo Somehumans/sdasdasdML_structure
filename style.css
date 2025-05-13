@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+<<<<<<< HEAD
+    font-family: 'Iceberg', 'Roboto',;
+}x
+=======
+    font-family: 'Iceberg', 'Roboto';
+}
+>>>>>>> game-improvements-new
+
+.iceberg-regular {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+<<<<<<< HEAD
+  }
+
+body {
+    background: linear-gradient(135deg, #091029, #2f2e2e, #100012);
+=======
+}
+
+body {
+    background: #000000;
+>>>>>>> game-improvements-new
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+<<<<<<< HEAD
+=======
+/* Star shape styling */
+.star {
+    position: absolute;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff;
+}
+
+>>>>>>> game-improvements-new
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
+    color: white;
+=======
+>>>>>>> game-improvements-new
+    max-width: 600px;
+    height: 310px;
+    z-index: 2;
+    animation: fadeIn 1s ease-in;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #6cd87c;
+    text-shadow: 0 0 10px rgba(94, 255, 108, 0.7);
+}
+
+<<<<<<< HEAD
+p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #e6e6e6;
+    margin-top: 5%;
+    font-family: 'Roboto' sans-serif;
+}
+
+.play-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #6cd87c;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(94, 255, 108, 0.7);
+    animation: float 3s ease-in-out infinite;
+    margin-top: 3%;
+}
+
+.play-btn:hover {
+    background-color: #a1e2b9;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(20, 143, 43, 0.9);
+=======
+#start-screen, #game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 20;
+}
+
+#start-screen h1, #game-over h1 {
+    font-family: 'Iceberg', monospace;
+    font-size: 4rem;
+    color: #6cd87c;
+    text-shadow: 0 0 5px rgba(94, 255, 108, 0.5);
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+#start-screen p {
+    font-family: monospace !important;
+    font-size: 1.5rem !important;
+    color: #9c4dff !important;
+    text-shadow: 0 0 5px rgba(156, 77, 255, 0.5) !important;
+    margin: 1rem 0 !important;
+}
+
+#final-score {
+    font-family: monospace;
+    font-size: 2rem;
+    color: #9c4dff;
+    text-shadow: 0 0 5px rgba(156, 77, 255, 0.5);
+    margin: 1rem 0;
+}
+
+/* Remove any previous button styles */
+button {
+    all: initial;
+}
+
+#start-button {
+    all: initial;
+    display: inline-block;
+    padding: 15px 32px;
+    font-size: 24px;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #6cd87c;
+    color: #000000;
+    border: none;
+    text-shadow: 0 0 5px rgba(94, 255, 108, 0.5);
+    box-shadow: 0 0 10px rgba(94, 255, 108, 0.7);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #8ee99b;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(94, 255, 108, 0.9);
+}
+
+#restart-button, #end-game {
+    all: initial;
+    display: inline-block;
+    padding: 15px 32px;
+    font-size: 24px;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #9c4dff;
+    border: 2px solid #9c4dff;
+    text-shadow: 0 0 5px rgba(156, 77, 255, 0.5);
+    box-shadow: 0 0 10px rgba(156, 77, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#restart-button:hover, #end-game:hover {
+    background-color: rgba(156, 77, 255, 0.1);
+    text-shadow: 0 0 8px rgba(156, 77, 255, 0.8);
+    box-shadow: 0 0 15px rgba(156, 77, 255, 0.5);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+>>>>>>> game-improvements-new
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+<<<<<<< HEAD
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@font-face {
+    font-family: Iceberg;
+    src: url(Iceberg-Regular.ttf);
+  }
+
+.floating {
+    animation: float 3s ease-in-out 1s;
+=======
+@font-face {
+    font-family: Iceberg;
+    src: url(Iceberg-Regular.ttf);
+}
+
+.floating {
+    animation: float 3s ease-in-out 1s;
+}
+
+body #game-container #start-screen p {
+    font-family: monospace !important;
+    font-size: 1.5rem !important;
+    color: #9c4dff !important;
+    text-shadow: 0 0 5px rgba(156, 77, 255, 0.5) !important;
+    margin: 1rem 0 !important;
+}
+
+/* Remove any other p tag styling that might be conflicting */
+p, .container p, #start-screen p {
+    color: #9c4dff !important;
+}
+
+#game-container #game-over #final-score {
+    font-family: monospace;
+    font-size: 2rem;
+    color: #9c4dff;
+    text-shadow: 0 0 5px rgba(156, 77, 255, 0.5);
+    margin: 1rem 0;
+}
+
+.ship {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+}
+
+.ship.game-started {
+    bottom: 30%;
+    transform: translateX(-50%);
+    transition: bottom 1.5s ease-out;
+}
+
+.ship.game-active {
+    bottom: 30%;
+    transform: translateX(-50%);
+    transition: left 0.3s ease-out;
+>>>>>>> game-improvements-new
+}
